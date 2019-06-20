@@ -15,6 +15,8 @@ namespace WindowsFormsAppCalculatorTutorial
         static void Main()
         {
             //main con
+            //conflict
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
