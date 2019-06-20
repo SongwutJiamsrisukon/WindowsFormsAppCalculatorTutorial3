@@ -14,6 +14,7 @@ namespace WindowsFormsAppCalculatorTutorial
         [STAThread]
         static void Main()
         {
+            //conflict
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
