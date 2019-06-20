@@ -8,5 +8,6 @@ namespace WindowsFormsAppCalculatorTutorial3
 {
     class AddingNewClass
     {
+        ///////
     }
 }
