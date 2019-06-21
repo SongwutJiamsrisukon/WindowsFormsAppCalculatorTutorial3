@@ -14,7 +14,7 @@ namespace WindowsFormsAppCalculatorTutorial
         [STAThread]
         static void Main()
         {
-            //createCalculateNewBranch
+            //createCalculateNewBranch2
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
