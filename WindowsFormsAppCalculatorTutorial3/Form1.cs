@@ -112,8 +112,7 @@ namespace WindowsFormsAppCalculatorTutorial
 
         private void CalculateEquation()
         {
-            var userInput = this.UserInputText.Text;
-
+           
             this.CalculationResultText.Text = ParseOperation();
 
             FocusInputText();
@@ -123,13 +122,39 @@ namespace WindowsFormsAppCalculatorTutorial
         {
             try
             {
-                throw new Exception("11111");
+                var input = this.UserInputText.Text;
+
+                //remove all space
+                input = input.Replace(" ", "");
+
+                //create a new top level operation
+                var operation = new Operation();
+                var leftSide = true;
+
+                for(int i = 0; i < input.Length; i++)
+                {
+                    if("0123456789.".Any(c => input[i] == c))
+                    {
+                        if (leftSide)
+                            operation.LeftSide = AddNumberPart(operation.LeftSide, input[i]);
+                    }
+                }
+
+                return "";
             }
             catch (Exception ex)
             {
                 return $"Invalid equation. {ex.Message}";// == "Invalid equation." + ex.Message
             }
-            return "";
+        }
+
+        private string AddNumberPart(string stringNumber, char newChar)
+        {
+            if (newChar == '.' && stringNumber.Contains('.')) {
+                throw new InvalidOperationException($"Number {stringNumber} already contains a. and another cannot be added");
+                //throw new InvalidOperationException("Number "+ stringNumber + " already contains a. and another cannot be added");
+            }
+            return stringNumber + newChar;
         }
 
         #endregion
