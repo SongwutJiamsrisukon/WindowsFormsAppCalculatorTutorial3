@@ -112,7 +112,24 @@ namespace WindowsFormsAppCalculatorTutorial
 
         private void CalculateEquation()
         {
-            throw new NotImplementedException();
+            var userInput = this.UserInputText.Text;
+
+            this.CalculationResultText.Text = ParseOperation();
+
+            FocusInputText();
+        }
+
+        private string ParseOperation()
+        {
+            try
+            {
+                throw new Exception("11111");
+            }
+            catch (Exception ex)
+            {
+                return $"Invalid equation. {ex.Message}";// == "Invalid equation." + ex.Message
+            }
+            return "";
         }
 
         #endregion

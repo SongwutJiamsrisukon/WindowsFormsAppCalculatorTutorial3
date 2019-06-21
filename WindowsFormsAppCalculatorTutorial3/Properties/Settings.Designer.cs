@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsAppCalculatorTutorial3.Properties {
+namespace WindowsFormsAppCalculatorTutorial.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

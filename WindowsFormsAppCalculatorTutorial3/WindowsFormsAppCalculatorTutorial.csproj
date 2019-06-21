@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F4B82CE9-E81F-4B9A-9051-063188891962}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsAppCalculatorTutorial3</RootNamespace>
-    <AssemblyName>WindowsFormsAppCalculatorTutorial3</AssemblyName>
+    <RootNamespace>WindowsFormsAppCalculatorTutorial</RootNamespace>
+    <AssemblyName>WindowsFormsAppCalculatorTutorial</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,6 +52,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Operation.cs" />
+    <Compile Include="OperationType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
